@@ -33,10 +33,10 @@
                 <p class="card-text"><%= book_review.review %></p>
               </div>
             </div>
-          <% end %>
+          <% end %> 
         </ul>
       <%= form_with(model: @book_review, local: true) do |form| %>
-        <div class= "field">
+        <div class="field">
           <%= form.text_area :review, :class => "form-control" %>
           <%= form.hidden_field :book_id, :value => @book.id %>
         </div>
