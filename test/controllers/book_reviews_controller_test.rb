@@ -9,7 +9,7 @@ class BookReviewsControllerTest < ActionDispatch::IntegrationTest
     get book_reviews_url
     assert_response :success
   end
-
+ 
   test "should get new" do
     get new_book_review_url
     assert_response :success
